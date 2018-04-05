@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Directives</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="vm">
+      <h1 v-if="h1">Directivas</h1>
+      <img v-bind:src="imagen" />
+      <div v-text="texto">
+      </div>
+      <div v-html="html"></div>
+      <div v-if="mostrar">
+        <h3>Titulo</h3>
+        <p>parrafo</p>
+        Este es el primer div
+      </div>
+      <!-- template es etiqueta de html5, que no va a ser mostrada en el dom -->
+      <template v-if='mostrar'>
+          <h4>Titulo 2</h4>
+      </template>
+      <ul>
+        <li v-for="pais in paises"> {{ pais }}</li>
+      </ul>
+      <div v-else> Este es el segundo</div>
+  </div>
+  <script src="vue.js"></script>
+</body>
+</html>

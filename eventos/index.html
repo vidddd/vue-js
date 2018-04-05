@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="eventos">
+    <button v-on:click="sumar">Sumar uno </button>
+    <button v-on:click="restar">Sumar dos </button>
+    <hr>
+    {{ contador }}
+
+    <button v-on:click="alerta('Esta es la alerta')">Mostrar alerta</button>
+  </div>
+  <script src="vue.js"></script>
+</body>
+</html>

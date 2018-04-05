@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Computed Properties</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="vm">
+     <button v-on:click="primero++">Incrementar 1</button>
+     <button v-on:click="segundo++">Incrementar 2</button>
+     <button v-on:click="tercero++">Incrementar 3</button>
+     <button v-on:click="cuarto++">Incrementar 4</button>
+     <button v-on:click="quinto++">Incrementar 5</button>
+     <p>Primero: {{ primero }}</p>
+     <p>Segundo: {{ segundo }}</p>
+     <p>Tercero: {{ tercero }}</p>
+     <p>Cuarto: {{ cuarto }}</p>
+     <p>Quinto: {{ quinto }}</p>
+     <p>Total: {{ total }}</p>
+  </div>
+  <script src="vue.js"></script>
+</body>
+</html>
